@@ -1,0 +1,59 @@
+.alta_alumnos {
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 23em;
+    text-align: center;
+  }
+  .titulos_general {
+    display: flex;
+    text-align: left;
+    color: #014f83;
+    /* color: #006400; */
+    padding-bottom: 2px;
+  }
+  
+  .titulo_alumnone {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    width: 250%;
+  }
+  .subtitulo_alumnone {
+    padding-top: 15px;
+    color: #6495ed;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .datos_doc {
+    text-align: center;
+  }
+  
+  .solicitud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .btn_general_alta_alumnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 30px; */
+    margin: 30px;
+    margin-inline-start: auto;
+  }
+  
+  .btn {
+    border: none;
+    background: var(--main-color);
+    color: beige;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px;
+    font-family: Verdana, Helvetica;
+  }
+  
+  .btn:hover {
+    background: #0b7dda;
+  }

@@ -1,0 +1,6 @@
+.container-route{
+    position: absolute;
+    margin: var(--header-offset) 0 0 var(--sidebar-offset-x);
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+}

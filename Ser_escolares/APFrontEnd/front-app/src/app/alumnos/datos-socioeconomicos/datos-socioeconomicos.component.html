@@ -1,0 +1,361 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<div class="container_socioeconomicos">
+  <div class="titulo_principal_socio">
+    <h1 class="titulo_socioalum">MODIFICAR DATOS SOCIOECONOMICOS ALUMNO</h1>
+  </div>
+
+  <form class="solicitud" action="" name="solicitud">
+    <table width="95%">
+      <tbody>
+        <tr>
+          <th>No.Control S.E.P</th>
+          <th>NOMBRE DEL ALUMNO</th>
+          <th>SEMESTRE</th>
+          <th>PERIODO ESCOLAR</th>
+          <th>PROM.ACUM</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan="3">CARRERA</th>
+          <th colspan="2">ESPECIALIDAD</th>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"></td>
+          <td colspan="2" align="center"></td>
+        </tr>
+        <tr>
+          <th colspan="3">CURP</th>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos Socioeconomicos-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+
+    <h3 align="center" class="subtitulo_alumnone">Datos Socioeconimicos</h3>
+    <table border width="95%">
+      <tbody>
+        <tr align="center">
+          <th colspan="4">
+            NIVEL MAXIMO DE ESTUDIOS ALCANZADOS POR TUS PADRES AUNQUE HALLAN
+            FALLECIIDO(SELECCIONA UNA COLUMNA)
+          </th>
+        </tr>
+        <tr>
+          <th>PADRE</th>
+          <th>MADRE</th>
+          <th>CON QUIEN VIVES ACTUALMENTE</th>
+          <th>INGRESOS FAMILIARES MENSUALES</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <select name="padre" id="padre">
+              <option value="0" selected="">No lo se</option>
+              <option value="1">No sabe leer ni escribir</option>
+              <option value="2">No fue a la escuela</option>
+              <option value="3">No termino la primaria</option>
+              <option value="4">
+                Tiene alguna capacitacion despues de la primaria
+              </option>
+              <option value="5">No termino la secundaria</option>
+              <option value="6">Termino la secundaria</option>
+              <option value="7">
+                Tiene alguna capacitacion tecnica despues de la secundaria
+              </option>
+              <option value="8">
+                Tiene estudios de tecnico profesional incompletos
+              </option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="madre" id="madre">
+              <option value="0" selected="">No lo se</option>
+              <option value="1">No sabe leer ni escribir</option>
+              <option value="2">No fue a la escuela</option>
+              <option value="3">No termino la primaria</option>
+              <option value="4">
+                Tiene alguna capacitacion despues de la primaria
+              </option>
+              <option value="5">No termino la secundaria</option>
+              <option value="6">Termino la secundaria</option>
+              <option value="7">
+                Tiene alguna capacitacion tecnica despues de la secundaria
+              </option>
+              <option value="8">
+                Tiene estudios de tecnico profesional incompletos
+              </option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="con_quien_vives" id="con_quien_vives">
+              <option value="0" selected="">Padre y madre</option>
+              <option value="1">Padre</option>
+              <option value="2">Madre</option>
+              <option value="3">Hermanos</option>
+              <option value="4">Conyuge o pareja</option>
+              <option value="5">Otro familiar</option>
+              <option value="6">Amigo o amigos</option>
+              <option value="7">Solo</option>
+              <option value="8">Hijos</option>
+              <option value="9">Otro</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="riesgos" id="riesgos">
+              <option value="0" selected="">Ninguno</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="4">
+            ¿CUAL ES LA OCUPACION O TRABAJO DE TUS PADRES O TUTORES?(SELECCIONA
+            UNA OPCION)
+          </th>
+        </tr>
+        <tr>
+          <th>PADRE</th>
+          <th>MADRE</th>
+          <th>¿DE QUIEN DEPENDE ECONOMICAMENTE?</th>
+          <th>LA CASA DONDE VIVES ES:</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <select name="padre_trabajo" id="padre_trabajo">
+              <option value="0" selected="">
+                Empleado, oficinista o secretaria de empresa privada
+              </option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="madre_trabajo" id="madre_trabajo">
+              <option value="0" selected="">Labores del Hogar</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="dependo_econ" id="dependo_econ">
+              <option value="0" selected="">Padre y Madre</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="casa_vives" id="casa_vives">
+              <option value="0" selected="">Propia</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>¿CUANTOS CUARTOS TIENE LA CASA?(SIN CONTAR BAÑOS NI PASILLOS)</th>
+          <th>¿CUANTAS PERSONAS VIVEN EN LA CASA</th>
+          <th colspan="2">
+            ¿CUANTAS PERSONAS INCLUYENDOTE A TI, DEPENDEN ECONOMICAMENTE DEL
+            PRINCIPAL APOYO O SUSTENTO?
+          </th>
+        </tr>
+        <tr>
+          <td align="center">
+            <select name="cuartos_casa" id="cuartos_casa">
+              <option value="0" selected="">cuatro</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="personas_casa_viven" id="personas_casa_viven">
+              <option value="0" selected="">cinco</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+          <td align="center" colspan="2">
+            <select name="sustento_econ" id="sustento_econ">
+              <option value="0" selected="">cuatro</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos de Emergencias-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+    <h3 align="center" class="subtitulo_alumnone">Datos de Emergencia</h3>
+    <table width="95%">
+      <tbody>
+        <tr>
+          <th>TIPO DE SANGRE</th>
+          <th>EN CASO DE EMERGENCIA ¿CON QUIEN NOS PODEMOS COMUNICAR?</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" value="" class="tipo_sangre" id="tipo_sangre" />
+          </td>
+          <td>
+            <input
+              type="text"
+              value=""
+              class="caso_emergencia"
+              id="caso_emergencia"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>CALLE CON No. EXTERIOR Y/O INTERIOR</th>
+          <th>COLONIA LOCALIDAD</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              class="calle_emergencia"
+              id="calle_emergencia"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              class="colonia_emergencia"
+              id="colonia_emergencia"
+              value=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>CODIGO POSTAL</th>
+          <th>MUNICIPIO</th>
+          <th>ESTADO</th>
+          <th>TELEFONO</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              class="calle_emergencia"
+              id="calle_emergencia"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              class="calle_emergencia"
+              id="calle_emergencia"
+              value=""
+            />
+          </td>
+          <td>
+            <select type="text" id="estado_emergencia" name="estado_emergencia">
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="telefono_emergencia"
+              id="telefono_emergencia"
+              value=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">LUGAR DE TRABAJO</th>
+          <th colspan="3">TELEFONO</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="text"
+              class="lugar_trabajo_emergencia"
+              id="lugar_trabajo_emergencia"
+              value=""
+            />
+          </td>
+          <td colspan="3">
+            <input
+              type="text"
+              class="telefono_emergencia_trabajo"
+              id="telefono_emergencia_trabajo"
+              value=""
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="btn_general_alta_alumnos">
+      <button type="submit" name="actualizar" class="btn btn-primary">
+        Actualizar
+      </button>
+      <button type="submit" name="back" class="btn">Regresar</button>
+    </div>
+  </form>
+</div>

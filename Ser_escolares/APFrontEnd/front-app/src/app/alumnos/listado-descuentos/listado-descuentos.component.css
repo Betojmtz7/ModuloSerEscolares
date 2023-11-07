@@ -1,0 +1,21 @@
+.contendor-lis-des{
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 23em;
+  text-align: center;
+}
+
+.titulo-descuentos-lis{
+  margin: 150px;
+}
+.opc-listado-des {
+    flex: 1 1 auto;
+  }
+  
+  .mat-toolbar{
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 23em;
+    text-align: center;
+  }
+  

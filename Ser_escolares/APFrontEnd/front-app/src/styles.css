@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    /* --main-color: #5a0202; Color principal de fondo */
+    --main-color: #581845  ;
+    /* color: ; */
+    --neutral-white: #F1F1F1; /*Color de fuente blanco*/
+    --header-fontsize-sii: clamp(.6rem, 1.4vw, 1.4rem);  /*Tamaño de fuente SII en header*/
+    --header-fontsize-itd:  clamp(.7rem, 1.6vw, 1.6rem);  /*Tamaño de fuente ITD en header*/
+    --sidebar-main-fontsize: 3rem; /*Tamaño de fuente títulos en sidebar*/
+    --sidebar-sub-fontsize: 2rem; /*Tamaño de fuente subtítulos en sidebar*/
+    --header-offset: 5rem;
+    --sidebar-offset-x: 28%;
+    --sidebar-offset-y: calc(100vh - 5rem);
+    --highlight-color-blue: #9CC4FA;    
+    --separator-color: #9FAFC9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+    
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+
+th, td{
+    font-family: 'Cabin', sans-serif;
+}
+
+th{
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: var(--neutral-white);
+}
+
+td{
+    font-weight: 400;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

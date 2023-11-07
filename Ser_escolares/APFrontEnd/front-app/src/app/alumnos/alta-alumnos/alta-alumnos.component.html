@@ -1,0 +1,727 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<div class="alta_alumnos">
+  <div class="titulos_general">
+    <h1 class="titulo_alumnone">AGREGAR ALUMNO NUEVO</h1>
+  </div>
+  <form  class="solicitud" action="" name="solicitud">
+    <!-- ------------------------------------ Datos Generales-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+    <h3 class="subtitulo_alumnone">Datos Generales</h3>
+    <table width="95%" align="center">
+      <tbody>
+        <tr align="center">
+          <th width="36%">Apellido Paterno Apellido Materno</th>
+          <th colspan="2">Nombre</th>
+          <th width="16%">No. de Control</th>
+        </tr>
+        <tr align="center">
+          <td></td>
+          <td colspan="2" align="center"></td>
+          <td></td>
+        </tr>
+        <tr align="center">
+          <th>lugar de Nacimiento</th>
+          <th width="17%">Fecha de Nacimiento</th>
+          <th width="22%">Sexo</th>
+          <th width="16%">Estado Civil</th>
+          <th width="16%">Discapacidad</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <select name="lugar_nacimiento" id="select">
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="fecha_nacimiento"
+              id="fecha_nacimiento"
+              size="15"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select name="sexo" id="select3">
+              <option value="M" selected="">Masculino</option>
+              <option value="F">Femenino</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="estado_civil" id="select4">
+              <option value="S">Soltero</option>
+              <option value="C">Casado(a)</option>
+              <option value="D">Divorsiado(a)</option>
+              <option value="V">Viudo(a)</option>
+              <option value="U">Union Libre</option>
+              <option value="O">Otro</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="discapacidad" id="select5">
+              <option value="0" selected="">No presenta</option>
+              <option value="1" selected="">
+                Discapacidad Sensorial y de Comunicacion
+              </option>
+              <option value="2" selected="">Discapacidad Motriz</option>
+              <option value="3" selected="">Discapacidad Mental</option>
+              <option value="4" selected="">Discapacidades Multiples</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Foto</th>
+          <th>Domicilio Actual (Calle y Numero)</th>
+          <th>Colonia</th>
+          <th>Codigo Postal</th>
+          <th>Ciudad o Localidad</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_calle"
+              name="domicilio_calle"
+              size="40"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_colonia"
+              name="domicilio_colonia"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="number"
+              id="codigo_postal"
+              name="codigo_postal"
+              size="10"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input type="text" id="ciudad" name="ciudad" size="20" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>Entidad Federativa</th>
+          <th>Telefono</th>
+          <th>CURP</th>
+          <th>Correo Electronico</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="center">
+            <select name="entidad_federativa" id="">
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="telefono"
+              name="telefono"
+              size="15"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="curp_alumno"
+              name="curp_alumno"
+              size="24"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="correo_electronico"
+              name="correo_electronico"
+              size="20"
+              value=""
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos Escolares-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+
+    <h3 align="center" class="subtitulo_alumnone">Datos Escolares</h3>
+    <table align="center" width="95%">
+      <tbody>
+        <tr>
+          <th width="35%" colspan="2">Carrera Y reticula</th>
+          <th width="10%">Semestre</th>
+          <th width="25%">becado Por</th>
+          <th width="30%">Materia(s) en Ex. Especial</th>
+        </tr>
+        <tr>
+          <td align="center" colspan="2"></td>
+          <td align="center"></td>
+          <td align="center">
+            <input type="text" name="becado_por" size="50%" value="" />
+          </td>
+          <td align="center">
+            <input type="text" name="materias_a_esp" size="60%" value="" />
+          </td>
+        </tr>
+        <tr>
+          <th>Grado Acdemico</th>
+          <th>Promedio Semestre anterior</th>
+        </tr>
+        <tr>
+          <td align="center"></td>
+          <td align="center"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos Socioeconomicos-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+
+    <h3 align="center" class="subtitulo_alumnone">Datos Socioeconimicos</h3>
+    <table width="95%" align="center">
+      <tbody>
+        <tr align="center">
+          <th>Ingreso Mensual</th>
+          <th>Integrantes del Hogar</th>
+          <th>Pertenecientes a algun grupo etnico o afrodecendientes</th>
+          <th>Se encuentra en riesgo de abandono y tipo de riesgos</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="number"
+              name="ingreso_total"
+              id="ingreso_total"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="number"
+              name="personas_casa"
+              id="personas_casa"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select name="comunidad_indigena" id="select6">
+              <option value="N" selected="">No</option>
+              <option value="S">Si</option>
+            </select>
+          </td>
+          <td align="center">
+            <select name="riesgos" id="select7">
+              <option value="0" selected="">Ninguno</option>
+              <option value="1">Familiar</option>
+              <option value="2">Economico</option>
+              <option value="3">Academico</option>
+              <option value="4">Social</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos Familiares-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+
+    <h3 class="subtitulo_alumnone">Datos Familiares</h3>
+    <table width="95%" align="center">
+      <tbody>
+        <tr>
+          <th>Nombre del Padre</th>
+          <th>Domicilio (Calle y Numero)</th>
+          <th>Colonia</th>
+          <th>Ciudad</th>
+          <th>Entidad Federativa</th>
+          <th>Telefono</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="text"
+              id="nombre_padre"
+              name="nombre_padre"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_calle_padre"
+              name="domicilio_calle_padre"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_colonia_padre"
+              name="domicilio_colonia_padre"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_ciudad_padre"
+              name="domicilio_ciudad_padre"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select
+              type="text"
+              id="domicilio_entidad_fed_padre"
+              name="domicilio_entidad_fed_padre"
+            >
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_telefono_padre"
+              name="domicilio_telefono_padre"
+              size="15"
+              value=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Nombre del Madre</th>
+          <th>Domicilio (Calle y Numero)</th>
+          <th>Colonia</th>
+          <th>Ciudad</th>
+          <th>Entidad Federativa</th>
+          <th>Telefono</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="text"
+              id="nombre_madre"
+              name="nombre_madre"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_calle_madre"
+              name="domicilio_calle_madre"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_colonia_madre"
+              name="domicilio_colonia_madre"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_ciudad_madre"
+              name="domicilio_ciudad_madre"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select
+              type="text"
+              id="domicilio_entidad_fed_madre"
+              name="domicilio_entidad_fed_madre"
+            >
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_telefono_madre"
+              name="domicilio_telefono_madre"
+              size="15"
+              value=""
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ------------------------------------ Datos Del Trabajo Alumno-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+
+    <h3 align="center" class="subtitulo_alumnone">Datos del Trabajo del Alumno</h3>
+    <table width="95%" align="center">
+      <tbody>
+        <tr>
+          <th>Nombre de la Empresa</th>
+          <th>Domicilio (Calle y Numero)</th>
+          <th>Colonia</th>
+          <th>Ciudad</th>
+          <th>Entidad Federativa</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="text"
+              id="nombre_empresa"
+              name="nombre_empresa"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_calle_empresa"
+              name="domicilio_calle_empresa"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_colonia_empresa"
+              name="domicilio_colonia_empresa"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_ciudad_empresa"
+              name="domicilio_ciudad_empresa"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select
+              type="text"
+              id="domicilio_entidad_fed_empresa"
+              name="domicilio_entidad_fed_empresa"
+            >
+              <option value="1">Aguascalientes</option>
+              <option value="2">Baja California Norte</option>
+              <option value="3">Baja California Sur</option>
+              <option value="4">Campeche</option>
+              <option value="5">Coahuila</option>
+              <option value="6">Colima</option>
+              <option value="7">Chiapas</option>
+              <option value="8">Chihuahua</option>
+              <option value="9">Ciudad de Mexico</option>
+              <option value="10" selected="">Durango</option>
+              <option value="11">Guanajuato</option>
+              <option value="12">Guerrero</option>
+              <option value="13">Hidalgo</option>
+              <option value="14">Jalisco</option>
+              <option value="15">Estado de Mexico</option>
+              <option value="16">Michoacan</option>
+              <option value="17">Morelos</option>
+              <option value="18">Nayarit</option>
+              <option value="19">NuevoLeon</option>
+              <option value="20">Oaxaca</option>
+              <option value="21">Puebla</option>
+              <option value="22">Queretaro</option>
+              <option value="23">Quintana Roo</option>
+              <option value="24">San Luis Potosi</option>
+              <option value="25">Sinaloa</option>
+              <option value="26">Sonora</option>
+              <option value="27">Tabasco</option>
+              <option value="28">Tamaulipas</option>
+              <option value="29">Tlaxcala</option>
+              <option value="30">Veracruz</option>
+              <option value="31">Yucatan</option>
+              <option value="32">Zacatecas</option>
+              <option value="34">Extranjero</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Puesto que ocupa</th>
+          <th>Antiguedad</th>
+          <th>Nombre del Jefe Inmediato Superior</th>
+          <th>Turno</th>
+          <th>Telefono</th>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="text"
+              id="cargo_desempenado"
+              name="cargo_desempenado"
+              size="30"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="antiguedad"
+              name="antiguedad"
+              size="20"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="nombre_jefe"
+              name="nombre_jefe"
+              size="50"
+              value=""
+            />
+          </td>
+          <td align="center">
+            <select name="turno" id="turno">
+              <option value="1" selected="">Matutino</option>
+              <option value="2">Vespertino</option>
+              <option value="3">Mixto</option>
+            </select>
+          </td>
+          <td align="center">
+            <input
+              type="text"
+              id="domicilio_telefono_empresa"
+              name="domicilio_telefono_empresa"
+              size="15"
+              value=""
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+     <!-- ------------------------------------ Datos Del Trabajo Alumno-----------------------------------
+    ----------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------- -->
+<h3 align="center" class="subtitulo_alumnone">Solo para alumnos de Nuevo Ingreso, Cambio de Institucion Tecnologico, o equivalencia de Estudios</h3>
+<table width="95%" align="center">
+    <tbody>
+        <tr>
+            <th colspan="1">Nombre de la Escuela de Procedencia</th>
+            <th>Tipo de Escuela</th>
+          </tr>
+          <tr>
+            <td align="center">
+                <input
+                  type="text"
+                  id="escuela_procedencia"
+                  name="escuela_procedencia"
+                  size="50"
+                  value=""
+                />
+              </td>
+              <td align="center">
+                <select name="tipo_escuela" id="tipo_escuela">
+                  <option value="1" selected="">Elige</option>
+                  <option value="2">Privada</option>
+                  <option value="3">Publica</option>
+                </select>
+              </td>
+          </tr>
+          <tr>
+            <th colspan="3">Datos del Documento que Ampara la Equivalencia</th>
+          </tr>
+          <tr>
+            <th>Autoridad Educativa</th>
+            <th>Folio</th>
+            <th>Fecha de Elaboracion</th>
+          </tr>
+          <tr>
+            <td align="center">
+                <input
+                  type="text"
+                  id="autoridad_educa"
+                  name="autoridad_educa"
+                  size="50"
+                  value=""
+                />
+              </td>
+              <td align="center">
+                <input
+                  type="text"
+                  id="folio"
+                  name="folio"
+                  size="50"
+                  value=""
+                />
+              </td>
+              <td align="center">
+                <input
+                  type="text"
+                  id="fecha_elaboracion"
+                  name="fecha_elaboracion"
+                  size="50"
+                  value=""
+                />
+              </td>
+          </tr>
+    </tbody>
+</table>
+    <div class="btn_general_alta_alumnos">
+        <button type="submit" name="alta" class="btn btn-primary">Dar de Alta</button>
+        <button type="submit" name="back" class="btn">Regresar</button>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,43 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<mat-toolbar></mat-toolbar>
+
+
+
+<!-- tabla mostrar listado de descuentos -->
+<mat-toolbar class="mat-toolbar">
+    <div class="titulo-descuentos-lis">
+        <span class="opc-listado-des">LISTADO DE DESCUENTOS</span>
+        <span class="opc-listado-des">NUEVO EDIFICIO</span>
+    </div>
+</mat-toolbar>
+
+<!-- columna Numero -->
+<div class="contendor-lis-des">
+    <mat-table [dataSource]="dataSource">
+        <ng-container>
+            <mat-header-cell *matHeaderCellDef>Numero</mat-header-cell>
+            <mat-cell *matCellDef=""></mat-cell>
+        </ng-container>
+        <!-- columna NoControl -->
+        <ng-container>
+            <mat-header-cell *matHeaderCellDef>NoControl</mat-header-cell>
+            <mat-cell *matCellDef=""></mat-cell>
+        </ng-container>
+        <!-- columna estatus -->
+        <ng-container>
+            <mat-header-cell *matHeaderCellDef>Estatus</mat-header-cell>
+            <mat-cell *matCellDef=""></mat-cell>
+        </ng-container>
+        <!-- columna fecha -->
+        <ng-container>
+            <mat-header-cell *matHeaderCellDef>Fecha</mat-header-cell>
+            <mat-cell *matCellDef=""></mat-cell>
+        </ng-container>
+        <!-- columna importe -->
+        <ng-container>
+            <mat-header-cell *matHeaderCellDef>Importe</mat-header-cell>
+            <mat-cell *matCellDef=""></mat-cell>
+        </ng-container>
+    </mat-table>
+</div>

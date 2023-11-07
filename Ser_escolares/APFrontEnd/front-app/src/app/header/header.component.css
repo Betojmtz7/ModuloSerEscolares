@@ -1,0 +1,56 @@
+.header{
+    position: fixed;
+    background: var(--main-color);
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: space-between;
+    height: 105px;
+    /* max-height: var(--header-offset); */
+    z-index: 100;
+    width: 100vw;
+    overflow: hidden;
+}
+
+div a{
+    text-decoration: none;
+}
+
+#span-logo-sep{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+#logo-sep{
+    max-height: 5rem;
+    padding: 0 0 0 .5rem;
+}
+
+.titulo-header{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    align-content: space-around;
+}
+
+#titulo-SII{
+    color: white;
+    font-size: var(--header-fontsize-sii);
+}
+
+#titulo-ITD{
+    color: yellow;
+    font-size: var(--header-fontsize-itd);
+}
+
+#span-logo-tecnm{
+    justify-self: end;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#logo-tecnm{
+    padding: 0 2rem 0 0;
+    max-height: 5rem;
+    font-weight: 500;
+}

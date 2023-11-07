@@ -1,0 +1,26 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<div class="descuentos">
+  <div class="titulo_des">
+    <h1>LISTADO DE DESCUENTOS</h1>
+  </div>
+  <br />
+  <table class="contenedor_descuentos">
+    <tr>
+      <th>Listado:</th>
+      <td>
+        <select class="opc_descuentos">
+          <option selected>-- Elige el tipo de busqueda --</option>
+          <option *ngFor="let opc of descuento">{{ opc.opci }}</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div>
+    <div class="btn_general_alta_alumnos">
+        <button type="submit" name="listar" class="btn btn-primary">LISTAR</button>
+        <button type="submit" name="cancelar" class="btn">CANCELAR</button>
+    </div>
+  </div>
+</div>

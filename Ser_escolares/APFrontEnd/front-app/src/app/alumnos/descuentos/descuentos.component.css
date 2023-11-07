@@ -1,0 +1,42 @@
+.descuentos {
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 23em;
+    text-align: center;
+  }
+
+  table{
+    justify-content: center;
+    
+  }
+ .contenedor_descuentos {
+    display: flex;
+    justify-content: center;
+
+ }
+  
+ th {
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+ }
+
+ .opc_descuentos {
+    height: 30px;
+ }
+
+ .btn {
+    height: 40px;
+    border: none;
+    background: #014e82;
+    color: beige;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px;
+    font-family: Verdana, Helvetica;
+  }
+  
+  .btn:hover {
+    background: #0b7dda;
+  }
